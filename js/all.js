@@ -45,7 +45,7 @@
 */
 /* -------------------------------------------------------- */
 
-;(function($, window, document, underfined) {
+; (function ($, window, document, underfined) {
     'use strict';
 
 
@@ -714,7 +714,7 @@
                         that.parent().find('.swiper-pagination-bullet').removeClass('swiper-pagination-bullet-active').eq(activeIndex).addClass('swiper-pagination-bullet-active');
                     }
                 },
-                onSlideClick: function (swiper) {},
+                onSlideClick: function (swiper) { },
                 paginationBulletRender: function (swiper, index, className) {
                     if ($('.testimonials-swiper').length) {
                         var newIndex = swiper.activeIndex + index;
@@ -1702,14 +1702,14 @@
 
                 // prepare image / slider timeline
                 var parallax = {
-                        start: heroOffset.top - winH,
-                        // end: heroOffset.top + heroHeight,
-                        end: heroOffset.top + winH,
+                    start: heroOffset.top - winH,
+                    // end: heroOffset.top + heroHeight,
+                    end: heroOffset.top + winH,
 
-                        timeline: new TimelineMax({
-                            paused: true
-                        })
-                    },
+                    timeline: new TimelineMax({
+                        paused: true
+                    })
+                },
                     // the container timeline
                     parallax2 = {
                         start: 0,
@@ -2045,10 +2045,10 @@
         var siblings = $(thisItem).siblings('.panel');
 
         if ($(thisItem).siblings('.panel').length > 0 && $(thisItem).siblings('.panel').css('display') === 'none') {
-            $(siblings).slideDown(400, function () {});
-            $(thisParent).addClass('active').siblings('.tabs-item-wrapp').removeClass('active').children('.panel').slideUp(400, function () {});
+            $(siblings).slideDown(400, function () { });
+            $(thisParent).addClass('active').siblings('.tabs-item-wrapp').removeClass('active').children('.panel').slideUp(400, function () { });
         } else {
-            $(siblings).slideUp(400, function () {});
+            $(siblings).slideUp(400, function () { });
             $(thisParent).removeClass('active');
         }
         return false;
@@ -2161,206 +2161,47 @@
         }
     }
 
+    /*********************************
+    i18n
+    *********************************/
 
-    /***********************************/
-    /* SHOP SLIDER */
-    /**********************************/
-
-    $('.clicked2').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/soft-chair/shop-img-3-gallery-2.jpg');
-        $('figure a').attr('href', 'img/soft-chair/shop-img-3-gallery-2.jpg');
-    });
-
-    $('.clicked1').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/soft-chair/shop-img-3-768x946.jpg');
-        $('figure a').attr('href', 'img/soft-chair/shop-img-3-768x946.jpg');
-    });
-
-    $('.clicked3').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/soft-chair/shop-img-3-gallery-1.jpg');
-        $('figure a').attr('href', 'img/soft-chair/shop-img-3-gallery-1.jpg');
-    });
-
-    //side-table page//
-
-    $('.clicked21').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/side-table/shop-img-5-gallery-2.jpg');
-        $('figure a').attr('href', 'img/side-table/shop-img-5-gallery-2.jpg');
-    });
-
-    $('.clicked11').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/side-table/shop-img-5-768x989.jpg');
-        $('figure a').attr('href', 'img/side-table/shop-img-5-768x989.jpg');
-    });
-
-    $('.clicked31').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/side-table/shop-img-5-gallery-1.jpg');
-        $('figure a').attr('href', 'img/side-table/shop-img-5-gallery-1.jpg');
-    });
-
-    //modern-end-table page//
-
-
-    $('.clicked22').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table/shop-img-8-gallery-2.jpg');
-        $('figure a').attr('href', 'img/modern-end-table/shop-img-8-gallery-2.jpg');
-    });
-
-    $('.clicked12').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table/shop-img-8-768x946.jpg');
-        $('figure a').attr('href', 'img/modern-end-table/shop-img-8-768x946.jpg');
-    });
-
-    $('.clicked32').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table/shop-img-8-gallery-1.jpg');
-        $('figure a').attr('href', 'img/modern-end-table/shop-img-8-gallery-1.jpg');
-    });
-
-    //bertt-side-table page//
-
-    $('.clicked23').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/bertt-side-table/shop-img-4-gallery-1.jpg');
-        $('figure a').attr('href', 'img/bertt-side-table/shop-img-4-gallery-1.jpg');
-    });
-
-    $('.clicked13').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/bertt-side-table/shop-img-4-768x946.jpg');
-        $('figure a').attr('href', 'img/bertt-side-table/shop-img-4-768x946.jpg');
-    });
-
-    $('.single_add_to_cart_button').on('click', function (eventObject) {
-        eventObject.preventDefault();
-        location.href = 'cart.html'
-    });
-
-    $('.add_to_cart_button').on('click', function (eventObject) {
-        eventObject.preventDefault();
-        location.href = 'cart.html'
-    });
-
-    //wooden-nightstand page //
-
-
-    $('.clicked24').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-nightstand/shop-img-1-gallery-1.jpg');
-        $('figure a').attr('href', 'img/wooden-nightstand/shop-img-1-gallery-1.jpg');
-    });
-
-    $('.clicked14').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-nightstand/shop-img-1-768x946.jpg');
-        $('figure a').attr('href', 'img/wooden-nightstand/shop-img-1-768x946.jpg');
-    });
-
-    $('.clicked34').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-nightstand/shop-img-1-gallery-2.jpg');
-        $('figure a').attr('href', 'img/wooden-nightstand/shop-img-1-gallery-2.jpg');
-    });
-
-    //modern-end-table-2 page//
-
-
-    $('.clicked25').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table-2/shop-img-7-gallery-2.jpg');
-        $('figure a').attr('href', 'img/modern-end-table-2/shop-img-7-gallery-2.jpg');
-    });
-
-    $('.clicked15').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table-2/shop-img-7-768x946.jpg');
-        $('figure a').attr('href', 'img/modern-end-table-2/shop-img-7-768x946.jpg');
-    });
-
-    $('.clicked35').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/modern-end-table-2/shop-img-7-gallery-1.jpg');
-        $('figure a').attr('href', 'img/modern-end-table-2/shop-img-7-gallery-1.jpg');
-    });
-
-    //wooden-chair page//
-
-
-    $('.clicked26').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-chair/shop-img-2-gallery-3.jpg');
-        $('figure a').attr('href', 'img/wooden-chair/shop-img-2-gallery-3.jpg');
-    });
-
-    $('.clicked16').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-chair/shop-img-2-768x946.jpg');
-        $('figure a').attr('href', 'img/wooden-chair/shop-img-2-768x946.jpg');
-    });
-
-    $('.clicked36').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/wooden-chair/shop-img-2-gallery-2.jpg');
-        $('figure a').attr('href', 'img/wooden-chair/shop-img-2-gallery-2.jpg');
-    });
-
-    //coffe-table page//
-
-    $('.clicked27').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/coffe-table/shop-img-9-gallery-1.jpg');
-        $('figure a').attr('href', 'img/coffe-table/shop-img-9-gallery-1.jpg');
-    });
-
-    $('.clicked17').on('click', function () {
-        $('ol li img').removeClass('flex-active');
-        $(this).addClass('flex-active');
-        $('.firstImg').attr('src', 'img/coffe-table/shop-img-9-768x946.jpg');
-        $('figure a').attr('href', 'img/coffe-table/shop-img-9-768x946.jpg');
-    });
-
-
-    $('.woocommerce-cart-form').on('submit', function (eventObject) {
-        eventObject.preventDefault();
+    $.i18n({
+        locale: document.documentElement.lang,
     })
-
-
-    $('.placeOrder').on('click', function (eventObject) {
-        eventObject.preventDefault();
-    })
-
-
-    $('.search-form').submit(function (eventObject) {
-        eventObject.preventDefault();
-    })
+        .load({
+            'en': '/i18n/message/message_en.json',
+            'cs': '/i18n/message/message_cs.json'
+        })
+        .done(() => {
+            // doing something here 
+            $('#titile-banner').i18n()
+            $('#description-banner-1').i18n()
+            $('#description-banner-2').i18n()
+            $('#button-reserve').i18n()
+            $('#button-reserve-2').i18n()
+            $('#button-reserve-3').i18n()
+            $('#about-subtitle').i18n()
+            $('#about-title-1').i18n()
+            $('#about-title-2').i18n()
+            $('#about-content-1').i18n()
+            $('#about-content-2').i18n()
+            $('#open-hour-subtitle').i18n()
+            $('#open-title').i18n()
+            $('#open-day').i18n()
+            $('#open-time').i18n()
+            $('#review-subtile').i18n()
+            $('#reivew-title').i18n()
+            $('#reivew-conetnt-1').i18n()
+            $('#review-auth-1').i18n()
+            $('#reivew-conetnt-2').i18n()
+            $('#review-auth-2').i18n()
+            $('#reivew-conetnt-3').i18n()
+            $('#review-auth-3').i18n()
+            $('#reivew-conetnt-4').i18n()
+            $('#review-auth-4').i18n()
+            $('#footer-action').i18n()
+            $('#button-menu').i18n()
+        })
+    console.log('buttonEnglish', buttonEnglish)
 
 })(jQuery, window, document);
