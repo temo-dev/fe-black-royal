@@ -2189,6 +2189,8 @@
             $('#open-title').i18n()
             $('#open-day').i18n()
             $('#open-time').i18n()
+            $('#open-day-2').i18n()
+            $('#open-time-2').i18n()
             $('#review-subtile').i18n()
             $('#reivew-title').i18n()
             $('#reivew-conetnt-1').i18n()
