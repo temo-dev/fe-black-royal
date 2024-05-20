@@ -2204,6 +2204,15 @@
             $('#footer-action').i18n()
             $('#button-menu').i18n()
         })
-    console.log('buttonEnglish', buttonEnglish)
+
+    /*********************************
+    i18n
+    *********************************/
+    $('.test-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true
+        // other options
+    });
+
 
 })(jQuery, window, document);
