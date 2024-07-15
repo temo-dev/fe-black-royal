@@ -6,10 +6,10 @@
   "button-reserve-2": "Reserve Now",
   "button-reserve-3": "Reserve Now",
   "about-subtitle": "ABOUT US",
-  "about-title-1": "THE STORY ABOUT SAKANA",
-  "about-title-2": "KOREAN GASTRONOMY AND SUSHI",
-  "about-content-1": "Our aim is to achieve and create appealing dishes using fresh ingredients and high quality materials to ensure that your dining experience at SAKANA is memorable, delectable and enjoyable. Our main inspiration for SAKANA was the Korean culture (traditional Korean cuisine, art and theater), combined with the harmony of nature or we call it natural simplicity.",
-  "about-content-2": "The history of sushi, one of the most popular dishes of Japanese cuisine, dates back to the ancient times and represent an integral part of the culture today. Not only the process of preparation, also the serving and its consumption can be seen as a sort of art, or even theatrical act itself.",
+  "about-title-1": "KONCEPT BLACK ROYAL",
+  "about-title-2": "ASIAN CUISINE",
+  "about-content-1": "Your health is important to us - We use fresh ingredients and choose the herbs ourselves.",
+  "about-content-2": " Mini show - Making the best Asian dishes, which we will prepare right before your eyes.",
   "open-hour-subtitle": "OPENING HOURS",
   "open-hour-title": "OPENING HOURS",
   "open-title": "OPENING HOURS",
@@ -28,5 +28,11 @@
   "reivew-conetnt-4": "The food was absolutely delicious… sushi were TOP quality; perfect service and fast kitchen. I highly recommend.. 🍣🍱",
   "review-auth-4": "Anthony Richard",
   "footer-action": "GET IN TOUCH",
-  "button-menu": "Menu"
+  "button-menu": "Menu",
+  "button-reserve-3-1": "Reserve Now -1",
+  "about-subtitle-1": "ABOUT US-1",
+  "about-title-1-1": "KONCEPT BLACK ROYAL-1",
+  "about-title-2-1": "ASIAN CUISINE-1",
+  "about-content-1-1": "Your health is important to us - We use fresh ingredients and choose the herbs ourselves.-1",
+  "about-content-2-1": " Mini show - Making the best Asian dishes, which we will prepare right before your eyes.-1"
 }

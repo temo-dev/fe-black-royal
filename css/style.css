@@ -78,8 +78,18 @@
 /*-------------------------------------------------------*/
 /* GLOBAL SETTING */
 /*-------------------------------------------------------*/
+@font-face {
+  font-family: "Microsport";
+  src: url("../font/Microsport-Bold.woff2") format("woff2"),
+    url("../font/Microsport-Bold.ttf") format("truetype"),
+    url("../font/Microsport-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
 }
 
 html,
@@ -92,11 +102,14 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
-  color: #111111;
+  color: #1a302c;
+  background-image: linear-gradient(black, white);
+  background-image: url("../img/black-royal/image/background.webp");
+  background-size: contain;
 }
 
 h1,
@@ -105,9 +118,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-weight: 700;
-  color: #111111;
+  color: #d5b35a;
 }
 
 h1 {
@@ -141,11 +154,11 @@ h6 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
-  color: #7e7d7d;
+  color: white;
 }
 
 ul,
@@ -238,7 +251,7 @@ a:focus {
 }
 
 .a-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -401,7 +414,7 @@ a:focus {
 }
 
 .a-btn-2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -457,7 +470,6 @@ a:focus {
   box-sizing: border-box;
   top: 50%;
   height: 1px;
-  background-color: #111111;
 }
 
 .a-btn-2 .a-btn-line:before {
@@ -567,7 +579,7 @@ a:focus {
 .a-btn-arrow {
   position: relative;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 30px;
   letter-spacing: 2px;
@@ -601,7 +613,7 @@ a:focus {
 .a-btn-arrow-2 {
   position: relative;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 30px;
   letter-spacing: 2px;
@@ -3632,7 +3644,7 @@ a:focus {
 }
 
 .prague-header.simple.sticky-menu.light.static {
-  background-color: #111;
+  background-color: #1a302c;
 }
 
 .prague-header.simple.sticky-menu.dark.static {
@@ -3640,7 +3652,7 @@ a:focus {
 }
 
 .prague-header.simple.sticky-menu.light.scroll {
-  background-color: #111;
+  background-color: #1a302c;
 }
 
 .prague-header.simple.sticky-menu.dark.scroll {
@@ -4314,7 +4326,7 @@ a:focus {
 }
 
 .prague_filter_projects .prague_filter_link_wrapper .filter-clear-all {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -4384,7 +4396,7 @@ a:focus {
 
 .prague_filter_projects .prague_filter_item .filter_item_category li {
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 1.5px;
@@ -4878,7 +4890,7 @@ a:focus {
 }
 
 .top-banner .content .subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 4.5px;
@@ -5425,7 +5437,7 @@ a:focus {
 }
 
 .heading .subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 4.5px;
@@ -5470,7 +5482,7 @@ a:focus {
 .heading .content h6 {
   position: relative;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 4.5px;
@@ -5593,11 +5605,11 @@ a:focus {
 }
 
 .heading.dark {
-  color: #111111;
+  color: #d5b35a;
 }
 
 .heading.dark .subtitle {
-  color: #111111;
+  color: #d5b35a;
 }
 
 .heading.dark .subtitle.divider:after {
@@ -5605,11 +5617,11 @@ a:focus {
 }
 
 .heading.dark .content {
-  color: #7e7d7d;
+  color: #f2f2f2;
 }
 
 .heading.dark .content p {
-  color: inherit;
+  color: #f2f2f2;
 }
 
 .heading.dark .content h6 {
@@ -5625,7 +5637,7 @@ a:focus {
 }
 
 .heading.dark .content ul li {
-  color: #7e7d7d;
+  color: #f2f2f2;
 }
 
 .heading.dark .content ul li:before {
@@ -5777,7 +5789,7 @@ a:focus {
 }
 
 .prague-counter .numbers svg mask .count {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
 }
 
 .prague-counter .numbers svg mask .number {
@@ -5839,6 +5851,12 @@ a:focus {
 .prague-counter.no-figure.multi_item {
   padding-top: 0;
   padding-left: 0;
+  background-color: #d5b35a;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: rgba(255, 204, 39, 0.4) -5px 5px,
+    rgba(255, 204, 39, 0.3) -10px 10px, rgba(255, 204, 39, 0.2) -15px 15px,
+    rgba(255, 204, 39, 0.1) -20px 20px, rgba(255, 204, 39, 0.05) -25px 25px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5949,7 +5967,7 @@ a:focus {
   .swiper-pagination-bullet {
   position: relative;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 1.5px;
@@ -6177,7 +6195,7 @@ a:focus {
   visibility: hidden;
   top: 0;
   right: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -6600,7 +6618,7 @@ a:focus {
 /*-------------------------------------------------------*/
 .prague-formidable .frm_forms.with_frm_style label.frm_primary_label,
 .prague-formidable .frm_forms.with_frm_style.frm_login_form label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 2.2px;
@@ -6631,7 +6649,7 @@ a:focus {
   .frm_forms.with_frm_style
   .chosen-container-single
   .chosen-single {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -6701,7 +6719,7 @@ a:focus {
 
 .prague-formidable .frm_forms.with_frm_style .frm_radio label,
 .prague-formidable .frm_forms.with_frm_style .frm_checkbox label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -6725,7 +6743,7 @@ a:focus {
 .prague-formidable
   .frm_forms.with_frm_style.frm_login_form
   input[type="submit"] {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 1.5px;
@@ -6774,14 +6792,14 @@ a:focus {
 
 .prague-formidable .frm_forms.with_frm_style .frm_error_style {
   border-radius: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
 }
 
 .prague-formidable .frm_forms.with_frm_style .frm_error {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 1px;
@@ -6792,7 +6810,7 @@ a:focus {
 .prague-formidable .frm_forms.with_frm_style .frm_message,
 .prague-formidable .frm_success_style {
   border-radius: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -6800,7 +6818,7 @@ a:focus {
 
 .prague-formidable .frm_forms.with_frm_style .frm_message p,
 .prague-formidable .frm_success_style p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -7364,7 +7382,7 @@ a:focus {
 }
 
 .prague-shortcode-parent .prague-shortcode-heading .parent-subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 4.5px;
@@ -7590,7 +7608,7 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -7708,7 +7726,7 @@ a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -8900,7 +8918,6 @@ a:focus {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 32px;
-  color: #111111;
   -webkit-transition: opacity 0.3s ease-in;
   -o-transition: opacity 0.3s ease-in;
   transition: opacity 0.3s ease-in;
@@ -8940,7 +8957,7 @@ a:focus {
   .project-list-wrapper
   .project-list-excerpt {
   margin-top: 22px;
-  color: #7e7d7d;
+  color: white;
 }
 
 .prague_list
@@ -10841,7 +10858,7 @@ a:focus {
 }
 
 .post-comments .comment-respond .comment-reply-title a {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 28px;
   letter-spacing: 1.5px;
@@ -10864,7 +10881,7 @@ a:focus {
 .post-comments .comment-form input[type="text"],
 .post-comments .comment-form input[type="email"],
 .post-comments .comment-form textarea {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -10905,7 +10922,7 @@ a:focus {
 }
 
 .post-comments .comment-form .submit-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   line-height: 18px;
   letter-spacing: 1.5px;
@@ -11316,7 +11333,7 @@ a:focus {
 
 .prague-sidebar .widget_search form input[type="text"],
 .prague-sidebar .widget_search form input[type="search"] {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -11494,7 +11511,7 @@ a:focus {
 }
 
 .prague-error-wrapper .prague-error-content .error-subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 3px;
@@ -11550,7 +11567,7 @@ a:focus {
 }
 
 .prague-protected-wrapper .prague-protected-content .protected-subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 3px;
@@ -11570,7 +11587,7 @@ a:focus {
 }
 
 .prague-protected-wrapper .prague-protected-form input[type="password"] {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -11664,7 +11681,7 @@ a:focus {
 }
 
 .prague-coming-wrapper .prague-coming-content .coming-subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 3px;
@@ -11750,7 +11767,7 @@ a:focus {
 }
 
 .prague-coming-wrapper .prague-coming-content .mc4wp-form input[type="email"] {
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   line-height: 26px;
   font-weight: 300;
@@ -14117,7 +14134,7 @@ a:focus {
 .number-arrows {
   width: 32px;
   height: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
 }
 
 .number-arrows.right-arrow .number {
@@ -14684,7 +14701,7 @@ a:focus {
   background-color: transparent;
   color: #111111;
   outline: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -15232,7 +15249,7 @@ a:focus {
   -webkit-user-select: none;
   overflow: hidden;
   color: rgba(17, 17, 17, 0.67);
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -15607,7 +15624,7 @@ a:focus {
   outline: none;
   background-color: #f2f2f2;
   color: rgba(17, 17, 17, 0.5);
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 26px;
@@ -15690,7 +15707,7 @@ a:focus {
 .woocommerce .woocommerce-result-count {
   margin: 0;
   color: rgba(17, 17, 17, 0.67);
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 46px;
@@ -16096,7 +16113,7 @@ a:focus {
   outline: none;
   background-color: #f2f2f2;
   color: rgba(17, 17, 17, 0.5);
-  font-family: "Roboto", sans-serif;
+  font-family: "Microsport", sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 26px;
@@ -17622,7 +17639,7 @@ span.wpcf7-not-valid-tip {
 }
 
 .split-wrapper .subtitle {
-  font-family: Roboto, sans-serif;
+  font-family: Microsport, sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 4.5px;
@@ -17632,7 +17649,7 @@ span.wpcf7-not-valid-tip {
 
 .split-wrapper .title {
   font-size: 40px;
-  font-family: Roboto, sans-serif;
+  font-family: Microsport, sans-serif;
   font-weight: 700;
   letter-spacing: 3.5px;
   text-transform: uppercase;
@@ -17645,7 +17662,7 @@ span.wpcf7-not-valid-tip {
 }
 
 .split-wrapper .description {
-  font-family: Roboto, sans-serif;
+  font-family: Microsport, sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -18281,7 +18298,7 @@ span.wpcf7-not-valid-tip {
   line-height: 18px;
   font-weight: 300;
   color: rgb(255, 255, 255);
-  font-family: Roboto;
+  font-family: Microsport;
   letter-spacing: 4px;
   transition: none 0s ease 0s;
   -webkit-transition: none 0s ease 0s;
@@ -18552,4 +18569,34 @@ span.wpcf7-not-valid-tip {
   .align-left {
     text-align: left !important;
   }
+}
+
+/* CSS */
+.button-47 {
+  align-items: center;
+  background: #d5b35a;
+  border: 0 solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1a302c;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-47:hover {
+  color: #fff;
 }

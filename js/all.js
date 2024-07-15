@@ -2203,6 +2203,12 @@
             $('#review-auth-4').i18n()
             $('#footer-action').i18n()
             $('#button-menu').i18n()
+            $('#button-reserve-3-1').i18n()
+            $('#about-subtitle-1').i18n()
+            $('#about-title-1-1').i18n()
+            $('#about-title-2-1').i18n()
+            $('#about-content-1-1').i18n()
+            $('#about-content-2-1').i18n()
         })
 
     /*********************************
