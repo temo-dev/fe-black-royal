@@ -3024,7 +3024,7 @@ a:focus {
   font-size: 5em;
   line-height: 2em;
   font-weight: 700;
-  color: white;
+  color: #d5b35a;
   -webkit-transition: -webkit-transform 0s linear;
   transition: -webkit-transform 0s linear;
   -o-transition: transform 0s linear;
@@ -3047,7 +3047,7 @@ a:focus {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-color: #111111;
+  background-color: #1a302c;
   border-radius: 2px;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
