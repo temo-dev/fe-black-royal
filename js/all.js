@@ -2178,6 +2178,7 @@
             $('#description-banner-1').i18n()
             $('#description-banner-2').i18n()
             $('#button-reserve').i18n()
+            $('#button-reserve-1').i18n()
             $('#button-reserve-2').i18n()
             $('#button-reserve-3').i18n()
             $('#about-subtitle').i18n()
